@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
         <!-- right nav top -->
         <ul class="nav navbar-nav pull-right">
           <li><a href="daftar.php?page=pemilik&register" class="text-white">Daftar</a></li>
-          <li><a href="/fullphp/admin/login.php" class="text-white">Login</a></li>
+          <li><a href="/fixxphp/admin/login.php" class="text-white">Login</a></li>
         </ul>
         <ul class="nav navbar-nav pull-right">
         </ul>
