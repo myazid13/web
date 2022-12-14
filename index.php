@@ -278,7 +278,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
 
   <section id="populer">
     <div class="container">
-      <a href="populer.html"><h4>Populer Kos Kosan</h4></a>
+      <a href="populer.php"><h4>Populer Kos Kosan</h4></a>
          <div class="row">
            <div class="iklan">
                <a href="detail.php" >
@@ -305,7 +305,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                </a>
            </div>
            <div class="iklan">
-               <a href="detail.html" >
+               <a href="detail.php" >
                    <div class="col-sm-4 col-lg-4 col-md-4">
                          <div class="thumbnail threed">
                              <img src="img/kamar/kamar2.jpg" alt="">
@@ -329,7 +329,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                </a>
            </div>
            <div class="iklan">
-               <a href="detail.html" >
+               <a href="detail.php" >
                    <div class="col-sm-4 col-lg-4 col-md-4">
                          <div class="thumbnail threed">
                              <img src="img/kamar/kamar3.jpg" alt="">
@@ -353,7 +353,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                </a>
            </div>
            <div class="iklan">
-               <a href="detail.html" >
+               <a href="detail.php" >
                    <div class="col-sm-4 col-lg-4 col-md-4">
                          <div class="thumbnail threed">
                              <img src="img/kamar/kamar4.jpg" alt="">
@@ -401,7 +401,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                </a>
            </div>
            <div class="iklan">
-               <a href="detail.html" >
+               <a href="detail.php" >
                    <div class="col-sm-4 col-lg-4 col-md-4">
                          <div class="thumbnail threed">
                              <img src="img/kamar/kamar6.jpg" alt="">
@@ -425,16 +425,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                </a>
            </div>
        </div>
-       <a href="populer.html" id="show-more" class="btn btn-default pull-right">Tampilkan lebih banyak iklan populer</a>
+       <a href="populer.php" id="show-more" class="btn btn-default pull-right">Tampilkan lebih banyak iklan populer</a>
    </div><hr id="garis">
   </section>
 
   <section id="terbaru">
     <div class="container">
-      <a href="populer.html"><h4>Terbaru Kos Kosan</h4></a>
+      <a href="populer.php"><h4>Terbaru Kos Kosan</h4></a>
          <div class="row">
            <div class="iklan">
-               <a href="detail.html" >
+               <a href="detail.php" >
                    <div class="col-sm-4 col-lg-4 col-md-4">
                          <div class="thumbnail threed">
                              <img src="img/kamar/kamar7.jpg" alt="">
@@ -482,7 +482,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                </a>
            </div>
            <div class="iklan">
-               <a href="detail.html" >
+               <a href="detail.php" >
                    <div class="col-sm-4 col-lg-4 col-md-4">
                          <div class="thumbnail threed">
                              <img src="img/kamar/kamar9.jpg" alt="">
@@ -506,7 +506,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                </a>
            </div>
            <div class="iklan">
-               <a href="detail.html" >
+               <a href="detail.php" >
                    <div class="col-sm-4 col-lg-4 col-md-4">
                          <div class="thumbnail threed">
                              <img src="img/kamar/kamar10.jpg" alt="">
@@ -530,7 +530,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                </a>
            </div>
            <div class="iklan">
-               <a href="detail.html" >
+               <a href="detail.php" >
                    <div class="col-sm-4 col-lg-4 col-md-4">
                          <div class="thumbnail threed">
                              <img src="img/kamar/kamar11.jpg" alt="">
@@ -554,7 +554,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                </a>
            </div>
            <div class="iklan">
-               <a href="detail.html" >
+               <a href="detail.php" >
                    <div class="col-sm-4 col-lg-4 col-md-4">
                          <div class="thumbnail threed">
                              <img src="img/kamar/kamar12.jpg" alt="">

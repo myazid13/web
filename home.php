@@ -1,76 +1,31 @@
-<div class="jumbotron">
-	<h1 class="display-4">Selamat datang di <span class="text-purple text-bold">Mandalika</span>Hotel.com</h1>
-	<p class="lead">Sewa kamar Hotel dan Apartemen murah, dimanapun dan kapanpun anda mau</p>
-	<a class="btn btn-primary btn-lg" href="<?=base_url('order/apartements')?>" role="button">Pesan Sekarang</a>
-</div>
-<div class="container kota-list">
-	<div class="section-title"><span>Tersedia</span> di berbagai kota besar</div>
-	<div class="row">
-		<div class="col-md-4">
-			<div class="card">
-				<div class="card-body kota">
-					<center>
-					<h5 class="card-title">Jakarta</h5>
-					<img style="width: 200px" src="<?=base_url('assets')?>/images/jakarta.png">
-					</center>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="card">
-				<div class="card-body kota">
-					<center>
-					<h5 class="card-title">Bandung</h5>
-					<img style="width: 200px" src="<?=base_url('assets')?>/images/bandung.png">
-					</center>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="card">
-				<div class="card-body kota">
-					<center>
-					<h5 class="card-title">Jogjakarta</h5>
-					<img style="width: 200px" src="<?=base_url('assets')?>/images/jogja.png">
-					</center>
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<div class="row">
-		<div class="col-md-2">
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-				<div class="card-body kota" style="height: 277px;">
-					<center>
-					<h5 class="card-title">Aceh</h5><br><br>
-					<img style="width: 200px" src="<?=base_url('assets')?>/images/aceh.png">
-					</center>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-				<div class="card-body kota">
-					<center>
-					<h5 class="card-title">Semarang</h5>
-					<img style="width: 200px" src="<?=base_url('assets')?>/images/semarang.jpg">
-					</center>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-3">
-			<div class="card">
-				<div class="card-body kota">
-					<center>
-					<h5 class="card-title">Mandalika</h5>
-					<img style="width: 200px" src="<?=base_url('assets')?>/images/mandalika.png">
-					</center>
-				</div>
-			</div>
-		<div class="col-md-2">
-		</div>
-	</div>
-</div>
+<?php require_once("config.php");
+session_start();
+if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
+    $sql = "SELECT * FROM pemilik WHERE username='$_POST[username]' AND password='".md5($_POST["password"])."'";
+    if ($query = $connection->query($sql)) {
+        if ($query->num_rows) {
+            while ($data = $query->fetch_array()) {
+              $_SESSION["is_logged"] = true;
+              $_SESSION["id"] = $data["id_pemilik"];
+              $_SESSION["nama"] = $data["nama"];
+              $_SESSION["username"] = $data["username"];
+            }
+            header('location: ?page=kost');
+        } else {
+            echo alert("Username / Password tidak sesuai!", "index.php");
+        }
+    } else {
+        echo "Query error!";
+    }
+}
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <h1>LOGIN BERHASIL</h1>
+  </body>
+</html>

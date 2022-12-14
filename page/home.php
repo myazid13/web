@@ -60,6 +60,16 @@
 					$no = 1;
 					?>
 					<?php while ($row = $query->fetch_assoc()): ?>
+						<tr>
+							<td><?=$no++?></td>
+							<td><?=$row["nama"]?></td>
+							<td>Rp.<?=$row["harga_1bulan"]?>,-</td>
+							<td>Rp.<?=$row["harga_3bulan"]?>,-</td>
+							<td>Rp.<?=$row["harga_pertahun"]?>,-</td>
+							<td><span class="label label-<?=($row["status"] == "Perempuan") ? "info" : "primary"?>"><?=$row["status"]?></span></td>
+							<td><?=$row["tersedia"]?></td>
+							<td><a href="?searched=click&key=<?=$row["id_kost"]?>" class="btn btn-success btn-xs">Lihat maps</a></td>
+						</tr>
 					<?php endwhile; ?>
 				</tbody>
 			</table>

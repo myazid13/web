@@ -52,8 +52,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
         </ul>
         <!-- right nav top -->
         <ul class="nav navbar-nav pull-right">
-          <li><a href="daftar.html" class="text-white">Daftar</a></li>
-          <li><a href="login.html" class="text-white">Login</a></li>
+          <li><a href="daftar.php" class="text-white">Daftar</a></li>
+          <li><a href="login.php" class="text-white">Login</a></li>
         </ul>
         <ul class="nav navbar-nav pull-right">
         </ul>
@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="img/lg2.png" id="logoatas"></a>
+                <a class="navbar-brand" href="index.php"><img src="img/lg2.png" id="logoatas"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse hidden-xs" id="bs-example-navbar-collapse-1">
