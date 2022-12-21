@@ -44,21 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
   <section class="nav-section">
     <nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top">
     <!-- top nav -->
-    <nav class="navbar navbar-top hidden-xs">
-      <div class="container">
-        <!-- left nav top -->
-        <ul class="nav navbar-nav pull-left">
-          <li><span id="takeline">Situs cari kosan mudah & terpercaya</a></li>
-        </ul>
-        <!-- right nav top -->
-        <ul class="nav navbar-nav pull-right">
-          <li><a href="daftar.php" class="text-white">Daftar</a></li>
-          <li><a href="login.php" class="text-white">Login</a></li>
-        </ul>
-        <ul class="nav navbar-nav pull-right">
-        </ul>
-      </div>
-    </nav>
+  
     <!-- down nav -->
     <nav class="navbar navbar-down" role="navigation">
         <div class="container">
@@ -139,11 +125,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
     						<div class="col-md-7 col-sm-12 col-xs-12" id="penjelasan">
 
     						<h2 class="name">
-    							Kos kosan putra Aman dan Nyaman
-    							<h4>Pemilik <a href="javascript:void(0);">Teteh Ledon</a></h4>
+    							Kos Unesa
+    							<h4>Pemilik <a href="javascript:void(0);">Pak Salam</a></h4>
                   <h6>CP  : 0341 123321</h6>
                   <h6>WA  : 08123632354</h6>
-                  <h6>BBM : - </h6>
     							<i class="fa fa-star fa-2x text-primary"></i>
     							<i class="fa fa-star fa-2x text-primary"></i>
     							<i class="fa fa-star fa-2x text-primary"></i>
@@ -158,6 +143,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
     							<small>Harga bisa ditawar</small>
     						</h3>
     						<label class="avaliable">Tersedia : 3 kamar</label>
+                <a class="page-scroll" href="/kost/">Booking</a>
     						<hr>
     						<div class="description description-tabs">
     							<ul id="myTab" class="nav nav-pills">
@@ -169,14 +155,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
     								<div class="tab-pane fade active in" id="more-information">
     									<br>
     									<strong>Description</strong>
-    									<p>Kos ini adalah kosan yang sangat nyaman, saking nyaman nya sampai serasa di rumah sendiri. Sudah terbukti ampuh</p>
+    									<p>Kos Pak Salam</p>
                       <br><hr class="line"><br>
                       <strong>Lokasi</strong>
-                      <p>Jl. Bendungan Siguragura Blok 1a No 1a</p>
+                      <p>Jl. Ketintang No. 165, 01 (Depan Kampus UNESA), Ketintang - Surabaya</p>
                       <br><hr class="line"><br>
                       <strong>Maps</strong>
                       <p>Peta Lokasi kosan</p>
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15805.745385347429!2d112.61496754603272!3d-7.9537786025016635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd600c9c3727a93aa!2sFakultas+Ilmu+Komputer+Universitas+Brawijaya!5e0!3m2!1sid!2sid!4v1501639587518" width="550" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31659.148092926218!2d112.69787781562505!3d-7.30961229999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa15c56feff5%3A0xf53c6e8275d9d139!2sGeeko%20Komputer%20One%20stop%20service%20laptop%20cab%20kampus%20UNESA%20terbaik%20NO%201%20di%20surabaya!5e0!3m2!1sen!2sid!4v1671636129649!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
     								<div class="tab-pane fade" id="fasilitas">
     									<br>
@@ -339,13 +325,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
 
   <section id="iklanlain">
     <div class="container">
-      <a href="populer.php" id="showiklanlain" class="pull-right">Lihat iklan kos lainnya</a>
+      <a href="populer.html" id="showiklanlain" class="pull-right">Lihat iklan kos lainnya</a>
     <div class="col-xs-12">
         <div class="carousel slide" id="myCarousel">
             <div class="carousel-inner">
                   <div class="item active">
                     <div class="thumbnails">
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar12.jpg" alt="">
@@ -367,7 +353,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                           </div>
                         </div>
                       </a>
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar11.jpg" alt="">
@@ -389,7 +375,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                           </div>
                         </div>
                       </a>
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar10.jpg" alt="">
@@ -411,7 +397,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                           </div>
                         </div>
                       </a>
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar9.jpg" alt="">
@@ -440,7 +426,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
 
                   <div class="item">
                     <div class="thumbnails">
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar8.jpg" alt="">
@@ -462,7 +448,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                           </div>
                         </div>
                       </a>
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar7.jpg" alt="">
@@ -484,7 +470,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                           </div>
                         </div>
                       </a>
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar6.jpg" alt="">
@@ -506,7 +492,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                           </div>
                         </div>
                       </a>
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar5.jpg" alt="">
@@ -532,7 +518,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                   </div>
                   <div class="item">
                     <div class="thumbnails">
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar4.jpg" alt="">
@@ -554,7 +540,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                           </div>
                         </div>
                       </a>
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar3.jpg" alt="">
@@ -576,7 +562,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                           </div>
                         </div>
                       </a>
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar2.jpg" alt="">
@@ -598,7 +584,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                           </div>
                         </div>
                       </a>
-                      <a href="detail.php">
+                      <a href="detail.html">
                         <div class="col-sm-3">
                           <div class="thumbnail threed">
                               <img src="img/kamar/kamar1.jpg" alt="">
@@ -653,7 +639,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                           </li>
                      </ul>
                  </div>
-                 <a href="aboutus.php" id="aboutus">About Us</a>
+                 <a href="aboutus.html" id="aboutus">About Us</a>
                  <div class="col-md-6 col-sm-6 col-xs-12">
                       <ul class="list-inline">
                              <li>

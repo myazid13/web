@@ -42,23 +42,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
 <body id="page-top" data-target=".navbar-fixed-top">
 
   <section class="nav-section">
-    <nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top">
+  {{  <nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top">
     <!-- top nav -->
-    <nav class="navbar navbar-top hidden-xs">
-      <div class="container">
-        <!-- left nav top -->
-        <ul class="nav navbar-nav pull-left">
-          <li><span id="takeline">Situs cari kosan mudah & terpercaya</a></li>
-        </ul>
-        <!-- right nav top -->
-        <ul class="nav navbar-nav pull-right">
-          <li><a href="daftar.php?page=pemilik&register" class="text-white">Daftar</a></li>
-          <li><a href="/fixxphp/admin/login.php" class="text-white">Login</a></li>
-        </ul>
-        <ul class="nav navbar-nav pull-right">
-        </ul>
-      </div>
-    </nav>
+   
     <!-- down nav -->
     <nav class="navbar navbar-down" role="navigation">
         <div class="container">
@@ -278,7 +264,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
 
   <section id="populer">
     <div class="container">
-      <a href="populer.php"><h4>Populer Kos Kosan</h4></a>
+      <a href="populer.php"><h4>Kos Kosan Populer</h4></a>
          <div class="row">
            <div class="iklan">
                <a href="detail.php" >
@@ -288,7 +274,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                              <div class="caption">
                                  <h4 class="pull-right" id="harga">Rp 650k /bulan</h4>
                                  <p class="ada"><span class="label label-info avaliable">Avaliable : 3</span></p>
-                                 <p id="deskripsi">Kos cantik dan nyaman, secantik dirimu dan senyaman pelukanmu</p>
+                                 <p id="deskripsi">Kos Pak Salam</p>
                              </div>
                              <div class="ratings">
                                  <p class="pull-right" id="review">156 reviews</p>
@@ -312,7 +298,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                              <div class="caption">
                                  <h4 class="pull-right" id="harga">Rp 650k /bulan</h4>
                                  <p class="ada"><span class="label label-info avaliable">Avaliable : 3</span></p>
-                                 <p id="deskripsi">Kos cantik dan nyaman, secantik dirimu dan senyaman pelukanmu</p>
+                                 <p id="deskripsi">Kos PTT</p>
                              </div>
                              <div class="ratings">
                                  <p class="pull-right" id="review">156 reviews</p>
@@ -336,7 +322,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                              <div class="caption">
                                  <h4 class="pull-right" id="harga">Rp 650k /bulan</h4>
                                  <p class="ada"><span class="label label-info avaliable">Avaliable : 3</span></p>
-                                 <p id="deskripsi">Kos cantik dan nyaman, secantik dirimu dan senyaman pelukanmu</p>
+                                 <p id="deskripsi">Kos Pak De</p>
                              </div>
                              <div class="ratings">
                                  <p class="pull-right" id="review">156 reviews</p>
@@ -360,7 +346,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                              <div class="caption">
                                  <h4 class="pull-right" id="harga">Rp 650k /bulan</h4>
                                  <p class="ada"><span class="label label-info avaliable">Avaliable : 3</span></p>
-                                 <p id="deskripsi">Kos cantik dan nyaman, secantik dirimu dan senyaman pelukanmu</p>
+                                 <p id="deskripsi">Kos Alami</p>
                              </div>
                              <div class="ratings">
                                  <p class="pull-right" id="review">156 reviews</p>
@@ -384,7 +370,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' AND isset($_POST["login"])) {
                              <div class="caption">
                                  <h4 class="pull-right" id="harga">Rp 650k /bulan</h4>
                                  <p class="ada"><span class="label label-info avaliable">Avaliable : 3</span></p>
-                                 <p id="deskripsi">Kos cantik dan nyaman, secantik dirimu dan senyaman pelukanmu</p>
+                                 <p id="deskripsi">Kos Putra</p>
                              </div>
                              <div class="ratings">
                                  <p class="pull-right" id="review">156 reviews</p>
